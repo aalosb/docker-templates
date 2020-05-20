@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>flood-ui</Name>
+  <Repository>aalos/flood-ui</Repository>
+  <Registry>https://hub.docker.com/r/aalos/flood-ui/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/aalos/flood-ui/</Support>
+  <Project>https://github.com/Flood-UI/flood</Project>
+  <Overview>A web UI for rTorrent with a Node.js backend and React frontend for Unraid.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container.&#xD;
+&#xD;
+This does not contain rTorrent. Use one of the other recommended rTorrent docker containers. This just acts as a UI replacement if there are more torrents than ruTorrent can handle.</Overview>
+  <Category>Downloaders: Other:</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Flood-UI/flood/master/flood.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A web UI for rTorrent with a Node.js backend and React frontend for Unraid.   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container.&#xD;
+&#xD;
+This does not contain rTorrent. Use one of the other recommended rTorrent docker containers. This just acts as a UI replacement if there are more torrents than ruTorrent can handle.</Description>
+  <Labels/>
+  <Config Name="Database" Target="/data" Default="/mnt/user/appdata/flood-ui" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/flood-ui</Config>
+  <Config Name="UI Port" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="rTorrent host" Target="RTORRENT_SCGI_HOST" Default="" Mode="" Description="Container Variable: RTORRENT_SCGI_HOST" Type="Variable" Display="always" Required="true" Mask="false">[IP]</Config>
+  <Config Name="rTorrent port" Target="RTORRENT_SCGI_PORT" Default="5000" Mode="" Description="Container Variable: RTORRENT_SCGI_PORT" Type="Variable" Display="always" Required="true" Mask="false">5000</Config>
+</Container>
